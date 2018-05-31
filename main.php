@@ -37,9 +37,9 @@ if($data->num_rows <= 0){
         echo "<td>". $row["Nama"]."</td>";
         echo "<td>". $row["Jurusan"]."</td>";
         echo '<td><a href="edit-from.php?Nim='.
-        $row["Nim"]. '">Edit</a>';
+        $row["NIM"]. '">Edit</a>';
         echo '<td><a href="hapus.php?Nim='.
-        $row["Nim"]. '">hapus</a>';
+        $row["NIM"]. '">hapus</a>';
         echo "</tr>";
 
     }
