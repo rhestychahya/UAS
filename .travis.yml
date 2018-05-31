@@ -1,0 +1,19 @@
+language: php
+
+env:
+
+  global:
+    - 'FTP_USER=rhesty-chahya'
+    - 'FTP_PASS=cahya123'
+
+script:
+# script buat folder baru
+#- "curl -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com -Q 'mkd public_html/praktek-4c'"
+ # script upload file *.php
+    - "curl -T koneksi.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
+    - "curl -T simpan-baru.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
+    - "curl -T update.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
+    - "curl -T hapus.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
+    - "curl -T main.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
+    - "curl -T Edit-from.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
+    - "curl -T tambah.php -u $FTP_USER:$FTP_PASS ftp://files.000webhost.com/public_html/praktek-4c/"
