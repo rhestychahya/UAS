@@ -33,7 +33,7 @@ if($data->num_rows <= 0){
 }else{
     while($row = $data->fetch_assoc()){
         echo "<tr>";
-        echo "<td>". $row["Nim"]."</td>";
+        echo "<td>". $row["NIM"]."</td>";
         echo "<td>". $row["Nama"]."</td>";
         echo "<td>". $row["Jurusan"]."</td>";
         echo '<td><a href="edit-from.php?Nim='.
